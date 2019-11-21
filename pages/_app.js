@@ -1,15 +1,9 @@
-import { h } from "preact"
-import App, { Container } from "next/app"
+import React from 'react'
 
-class MyApp extends App {
+class MyApp extends React.Component {
 	render() {
 		const { Component, pageProps } = this.props
-
-		return (
-			<Container>
-				<Component {...pageProps} />
-			</Container>
-		)
+		return <Component {...pageProps} />
 	}
 }
 
